@@ -1,7 +1,7 @@
 package com.yakkaytech.linkSharing.services;
 
 import com.yakkaytech.linkSharing.domain.User;
-import com.yakkaytech.linkSharing.repository.jpa.UserRepository;
+import com.yakkaytech.linkSharing.repository.UserRepository;
 import com.yakkaytech.linkSharing.util.ResponseDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

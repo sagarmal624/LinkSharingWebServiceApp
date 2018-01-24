@@ -1,4 +1,4 @@
-package com.yakkaytech.linkSharing.repository.jpa;
+package com.yakkaytech.linkSharing.repository;
 
 import com.yakkaytech.linkSharing.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
