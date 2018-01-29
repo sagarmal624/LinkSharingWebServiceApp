@@ -1,9 +1,11 @@
 package com.yakkaytech.linkSharing.domain;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-public class LinkResource extends Resource {
+@DiscriminatorValue("link_resource")
+public class LinkResource extends Resource  {
      private String Url;
 
     public String getUrl() {

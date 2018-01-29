@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-public class Topic {
+public class Topics {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -19,7 +19,7 @@ public class Topic {
     @OneToMany(cascade = CascadeType.ALL)
     private List<Subscription> subscription;
     @OneToMany(cascade = CascadeType.ALL)
-    private Resource resource;
+    private List<Resource> resource;
 
     public Long getId() {
         return id;
@@ -69,11 +69,11 @@ public class Topic {
         this.subscription = subscription;
     }
 
-    public Resource getResource() {
+    public List<Resource> getResource() {
         return resource;
     }
 
-    public void setResource(Resource resource) {
+    public void setResource(List<Resource> resource) {
         this.resource = resource;
     }
 }

@@ -1,9 +1,11 @@
 package com.yakkaytech.linkSharing.domain;
 
+import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-public class DocumentResource extends Resource{
+@DiscriminatorValue("doc_resource")
+public class DocumentResource extends Resource {
   private String filepath;
 
     public String getFilepath() {

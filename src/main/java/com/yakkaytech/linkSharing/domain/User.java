@@ -22,7 +22,7 @@ public class User {
     private  Date updatedBy;
 
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Topic> topic=new ArrayList();
+    private List<Topics> topics =new ArrayList();
 
     @OneToMany(cascade = CascadeType.ALL)
     private List<Subscription> subscription;
@@ -119,12 +119,12 @@ public class User {
         this.updatedBy = updatedBy;
     }
 
-    public List<Topic> getTopic() {
-        return topic;
+    public List<Topics> getTopics() {
+        return topics;
     }
 
-    public void setTopic(List<Topic> topic) {
-        this.topic = topic;
+    public void setTopics(List<Topics> topics) {
+        this.topics = topics;
     }
 
     public List<Subscription> getSubscription() {
